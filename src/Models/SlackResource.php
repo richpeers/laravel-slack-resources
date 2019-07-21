@@ -21,18 +21,28 @@ class SlackResource extends Model
     ];
 
     /**
-     * @var array
-     */
-    protected $casts = [
-        'source' => 'array',
-        'meta' => 'array'
-    ];
-
-    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function tags()
     {
         return $this->belongsToMany(SlackTag::class, 'slack_resource_tag', 'resource_id', 'tag_id');
+    }
+
+    /**
+     * @param $value
+     * @return mixed
+     */
+    public function getSourceAttribute($value)
+    {
+        return \json_decode($value);
+    }
+
+    /**
+     * @param $value
+     * @return mixed
+     */
+    public function getMetaAttribute($value)
+    {
+        return \json_decode($value);
     }
 }
