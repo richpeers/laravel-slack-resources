@@ -1,5 +1,5 @@
 {
-    "name": "rich/laravel-slack-resources",
+    "name": "richpeers/laravel-slack-resources",
     "description": "Store url resources from slack using /resource url tag",
     "type": "project",
     "license": "MIT",
