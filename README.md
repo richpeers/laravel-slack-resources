@@ -15,7 +15,7 @@ This will intercept slack command `/resource https://useful-url tag`, authentica
 Run migrations
 `php artisan migrate`
 
-Setup slack app
+### Setup slack app
 1. Create new app
 2. Add command
 3. point commmand post to your url eg `https:://your-url/api/resources`
