@@ -20,5 +20,5 @@ Run migrations
 2. Add command
 3. point commmand post to your url eg `https:://your-url/api/resources`
 4. Install the app to your slack workspace
-5.Add the slack app's signing sectet to .env
+5. Add the slack app's signing sectet to .env
 `SLACK_SIGNING_SECRET=your_slack_app_signing_secret`
