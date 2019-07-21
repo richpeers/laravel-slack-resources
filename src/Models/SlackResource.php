@@ -21,6 +21,14 @@ class SlackResource extends Model
     ];
 
     /**
+     * @var array
+     */
+    protected $casts = [
+        'source' => 'array',
+        'meta' => 'array'
+    ];
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function tags()
