@@ -1,7 +1,7 @@
 # laravel-slack-resources
 Laravel package for saving url resources from a slack command
 
-This will intercept slack command `/resource https://useful-url tag`, authenticate against a slack signing secret key, record the urlk and associate tags. It will then dispatch a queued job to fetch the site's meta data and title.
+This will intercept slack command `/resource https://useful-url tag`, authenticate against a slack signing secret key, record the URL and associated tags. It will then dispatch a queued job to fetch the site's meta data and title.
 
 ## Install:
 `composer require richpeers/laravel-slack-resources`
